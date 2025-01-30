@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoramento de Vendas</h1>
+        <form id="vendaForm">
+            <input type="text" id="nomeProduto" placeholder="Nome do Produto" required>
+            <input type="number" id="precoProduto" placeholder="Preço Unitário" required>
+            <input type="number" id="quantidadeVendida" placeholder="Quantidade Vendida" required>
+            <button type="submit">Registrar Venda</button>
+        </form>
+
+        <h2>Faturamento do Mês: <span id="faturamentoMensal">R$ 0,00</span></h2>
+        <h3>Desafio do Mês: <span id="desafioMes">Em andamento...</span></h3>
+
+        <canvas id="graficoVendas"></canvas>
+
+        <div id="vendasLista">
+            <h2>Vendas Registradas</h2>
+            <ul id="listaVendas"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
